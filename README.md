@@ -1,5 +1,3 @@
-
-468
 # 🚀 Data Science Journey
 
 Hello! My name is **Luan Putinati Lorencetti**.
