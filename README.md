@@ -1,23 +1,23 @@
-# 🚀 Jornada em Ciência de Dados
 
-Olá! Meu nome é **Luan Putinati Lorencetti**.
+468
+# 🚀 Data Science Journey
 
-Este repositório reúne minha jornada de aprendizado em Ciência de Dados.
+Hello! My name is **Luan Putinati Lorencetti**.
 
-## Objetivos
+This repository documents my learning journey in Data Science.
 
-- Concluir a formação em Ciência de Dados da EBAC.
-- Desenvolver o projeto SentinelGov AI.
-- Construir um portfólio sólido.
-- Conquistar oportunidades internacionais em Data Science.
+## Goals
 
-## Estrutura
+- Build a solid portfolio.
+- Develop the SentinelGov AI project.
+- Secure international opportunities in Data Science.
 
-- 📁 EBAC
+## Structure
+
 - 📁 SentinelGov-AI
 - 📁 Portfolio
 
 ---
 
-**Em constante evolução.**
-> "Transformando conhecimento em soluções de Inteligência Artificial para o setor público."
+**Constantly evolving.**
+> "Transforming knowledge into Artificial Intelligence solutions for the public sector."
