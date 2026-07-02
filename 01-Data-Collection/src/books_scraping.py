@@ -1,5 +1,6 @@
 # Import required libraries
 from datetime import datetime
+from pathlib import Path
 
 import pandas as pd
 import requests
@@ -11,10 +12,7 @@ def get_exchange_rate(base_currency, target_currency):
     url = "https://api.frankfurter.dev/v1/latest"
 
     # Define the request parameters
-    params = {
-        "base": base_currency,
-        "symbols": target_currency
-    }
+    params = {"base": base_currency, "symbols": target_currency}
 
     # Send a GET request to the exchange rate API
     response = requests.get(url, params=params, timeout=10)
@@ -72,7 +70,7 @@ def collect_books(url, exchange_rate, collection_datetime):
             "Title": title,
             "Price (GBP)": price_gbp,
             "Exchange Rate (GBP to BRL)": round(exchange_rate, 4),
-            "Price (BRL)": price_brl
+            "Price (BRL)": price_brl,
         }
 
         # Add the book dictionary to the catalog list
@@ -111,7 +109,8 @@ def main():
     books_url = "https://books.toscrape.com/"
 
     # Define the output CSV file path
-    file_path = "01-Data-Collection/books_catalog.csv"
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    file_path = BASE_DIR / "books_catalog.csv"
 
     # Register the collection date and time
     collection_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -130,11 +129,7 @@ def main():
 
     # Display execution summary
     display_summary(
-        books_url,
-        exchange_rate,
-        len(catalog),
-        file_path,
-        collection_datetime
+        books_url, exchange_rate, len(catalog), file_path, collection_datetime
     )
 
 

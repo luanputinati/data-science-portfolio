@@ -1,4 +1,26 @@
+# Virtual Environment
 .venv/
+
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
+
+# Jupyter
 .ipynb_checkpoints/
+
+# VSCode
+.vscode/*.code-workspace
+
+# CSV temporários
+*.tmp
+*.bak
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+01-Data-Collection/books_catalog.csv
