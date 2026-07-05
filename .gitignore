@@ -24,3 +24,10 @@ Thumbs.db
 # Logs
 *.log
 01-Data-Collection/books_catalog.csv
+
+# Dados brutos e arquivos processados do projeto de tratamento
+02-Data-Treatment/data/raw/*
+!02-Data-Treatment/data/raw/.gitkeep
+
+02-Data-Treatment/data/processed/*
+!02-Data-Treatment/data/processed/.gitkeep
