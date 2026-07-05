@@ -17,7 +17,7 @@ def carregar_dados(caminho: Path) -> pd.DataFrame:
     if not caminho.exists():
         raise FileNotFoundError(f"Arquivo não encontrado: {caminho}")
 
-    return pd.read_csv(caminho)
+    return pd.read_csv(caminho, dtype={"cpf": "string"})
 
 
 def gerar_relatorio(df: pd.DataFrame) -> str:
