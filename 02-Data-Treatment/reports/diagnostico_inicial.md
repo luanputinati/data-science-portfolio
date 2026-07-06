@@ -15,7 +15,7 @@
 | Coluna | Tipo |
 |---|---|
 | nome | str |
-| cpf | str |
+| cpf | string |
 | idade | int64 |
 | data | str |
 | endereco | str |

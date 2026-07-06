@@ -293,9 +293,13 @@ def main() -> None:
 
     cpfs_invalidos = int((~df_validado["cpf_valido"]).sum())
 
-    idades_divergentes = int((df_validado["idade_compativel"] == False).sum())
+    idades_divergentes = int(
+        df_validado["idade_compativel"].eq(False).fillna(False).sum()
+    )
 
-    estados_divergentes = int((df_validado["estado_consistente"] == False).sum())
+    estados_divergentes = int(
+        df_validado["estado_consistente"].eq(False).fillna(False).sum()
+    )
 
     print("\nCUSTOMER DATA VALIDATION")
     print("-" * 40)

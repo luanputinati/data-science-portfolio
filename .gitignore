@@ -31,3 +31,7 @@ Thumbs.db
 
 02-Data-Treatment/data/processed/*
 !02-Data-Treatment/data/processed/.gitkeep
+
+# Python cache
+__pycache__/
+*.py[cod]
