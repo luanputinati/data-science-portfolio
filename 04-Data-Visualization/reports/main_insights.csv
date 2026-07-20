@@ -1,0 +1,13 @@
+Dataset,Metric,Result
+Customers,Mean customer age,40.0 years
+Customers,Median customer age,38.0 years
+Customers,Mean salary,"R$ 6,772.00"
+Customers,Median salary,"R$ 6,061.63"
+Customers,Experience and salary correlation,0.43
+Customers,Highest median salary by education,Pós-graduação
+Customers,Highest median salary by professional area,Tecnologia
+E-commerce,Brand with most catalog products,lupo (93 products)
+E-commerce,Brand with highest estimated sales,"lupo (292,032 estimated units)"
+E-commerce,Reviews and estimated sales correlation,0.89
+E-commerce,Discount and estimated sales correlation,0.05
+E-commerce,Rating and price correlation,-0.03
